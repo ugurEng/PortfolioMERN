@@ -1,10 +1,12 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import './components.css';
+
 
 function Header(props) {
     return <header> 
      
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/">Ugur`s Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

@@ -40,15 +40,15 @@
 
 
 .form-control {
-  width:60%;
+  width:80%;
 }
 .labell {
   display: flex;
 }
 
 #adsa {
-  
-    width: 100%;
+    display: none;
+    width: 85%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
@@ -69,7 +69,6 @@
 
 .homepage-graphic{
   margin-top:30px;
-  
 }
 
 .homepage-firstsection{
@@ -83,6 +82,7 @@
 .texttt{
   text-decoration: none;
 }
+
 
 .homepage-paragraph-left{
   margin-left: 5rem;
@@ -151,3 +151,12 @@
   color:#aaa;
   margin-bottom:0;
 }
+
+.cardd{
+  margin-right: 50px;
+}
+.logout{
+  margin-right: 10px;
+}
+
+

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom';
 import axios from "axios"
-import '../Admin.css';
+import './Admin.css';
+import Sidebarcomponent from "./DashComponents/Sidebarcomponent";
+import NavComponent from "./DashComponents/NavComponent";
 
 function AdminMERN() {
 
@@ -57,37 +58,13 @@ function AdminMERN() {
   }
 
   return <div>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Navbar</a>
-      </div>
-    </nav>
+    <NavComponent/>
     <div>
-    <div class="sidebar">
-        <a class="active" href="/">Add Project</a>
-        <Link className="texttt" to='/AdminShopify.js'>
-        <a href="/">Shopify Projects</a>
-        </Link>
-        <Link className="texttt" to='/AdminMERN.js'>
-        <a href="/">MERN Stack Projects</a>
-        </Link>
-        <Link className="texttt" to='/AdminMentoring.js'>
-        <a href="/">Mentoring Projects</a>
-        </Link>
-        <a href="#contact">Students</a>
-        <a href="#about">Payment</a>
-        <a href="#about">Back</a>
-      </div>
-
-
-
+    <Sidebarcomponent/>
       <div class="content overflow-auto">
-
         <div id="adsa" class="alert alert-primary" role="alert">
           A simple primary alert—check it out!
         </div>
-       
-
         <form onSubmit={(e) => submit(e)} >
           <div class="form-group-sm ada">
             <label class="labell" for="exampleFormControlSelect1">Select Your Project</label>

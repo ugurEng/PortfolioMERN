@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #c9c9c9;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -15,10 +15,26 @@
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 5px;
   text-decoration: none;
+  text-align: left;
+}
+
+.navbaricon{
+  margin-right: 7px;
 }
  
+.formcss{
+  margin-left:100px;
+  width:1200px
+}
+.addproject{
+  margin-right:100px
+}
+
+.addprojectdiv{
+  width: 800px;
+}
 
 
 .sidebar a:hover:not(.active) {
@@ -30,6 +46,12 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
   width: 100%;
+  position: fixed;
+}
+.MentoringContent{
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
   position: fixed;
 }
 

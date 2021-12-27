@@ -2,10 +2,9 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from './Pages/Home';
 import Mentoring from "./Pages/Mentoring";
-import Mernstack from './Pages/Mernstack';
-import Shopify from './Pages/Shopify';
+import Mernstack from './Pages/CommercialProjects';
 import Login from './Pages/Login';
-import Admin from './Dasboard/Admin';
+import AddProject from './Dasboard/AddProject';
 import Projects from './Pages/Projects';
 import AdminMentoring from './Dasboard/AdminMentoring';
 import AdminMERN from './Dasboard/AdminMERN';
@@ -21,8 +20,7 @@ function App() {
           <Route path="/Mentoring.js" component={Mentoring}/>
           <Route path="/Login.js" component={Login}/>
           <Route path="/Mernstack.js" component={Mernstack}/>
-          <Route path="/Shopify.js" component={Shopify}/>
-          <Route path="/Admin.js" component={Admin}/>
+          <Route path="/AddProject.js" component={AddProject}/>
           <Route path="/AdminMentoring.js" component={AdminMentoring}/>
           <Route path="/AdminMERN.js" component={AdminMERN}/>
           <Route path="/AdminShopify.js" component={AdminShopify}/>

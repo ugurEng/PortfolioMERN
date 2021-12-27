@@ -12,8 +12,30 @@
     }
   }
   
-  
+  .ddd{
+    justify-content: center
+  }
   .pricing-header {
     max-width: 700px;
   }
-  
+
+  .mentoring{
+    margin-right: 80px;
+  }
+  .commercial{
+    margin-left: 80px;
+  }
+
+  .navbar{
+      background-color: #2f23f3;
+  }
+
+  .adad{
+    background-color: #00d0ff;
+    height: 500px;
+  }
+
+  .homepage-graphic{
+      width: 400px;
+      height:400px;
+  }

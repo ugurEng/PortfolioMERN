@@ -3,8 +3,7 @@ import Header from "../components/Header";
 import axios  from "axios"
 
 
-
-function Mernstack() {
+function CommercialProjects() {
 
   const [posts, setPosts] = useState([])
 
@@ -17,9 +16,6 @@ function Mernstack() {
       console.log(err)
     })
   }, [])
-
- 
-
     return <div> 
     <Header></Header>
   <section class="py-5 text-center container">
@@ -55,4 +51,4 @@ function Mernstack() {
 </div>
   }
 
-  export default Mernstack;
+  export default CommercialProjects;

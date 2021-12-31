@@ -1,17 +1,17 @@
 const router = require('express').Router();
-let Projects = require('../models/projects.model');
+let Commercial = require('../models/projects.model');
 
 
 
 router.route('/').get((req, res) => {
-    Projects.find({projectselect: 'MERN Stack'})
-    .then(mernstacks => res.json(mernstacks))
+   Commercial.find({projectselect: 'Commercial Project'})
+    .then(Projects => res.json(Projects))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 
 router.route('/:id').delete((req, res) => {
-    Projects.findByIdAndDelete(req.params.id)
+    Commercial.findByIdAndDelete(req.params.id)
     .then(() => res.json('Exercise deleted.'))
     .catch(err => res.status(400).json('Hatali: ' + err));
 });
@@ -26,10 +26,10 @@ router.route('/add').post((req, res) => {
   const projectselect= req.body.projectselect;
   const projectimage=req.body.projectimage;
   
-  const newUser = new Projects({projectname,projectdesc,projectselect,projectimage});
+  const newUser = new Commercial({projectname,projectdesc,projectselect,projectimage});
 
   newUser.save()
-    .then(() => res.json('Mernstacks added!'))
+    .then(() => res.json('Project added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 

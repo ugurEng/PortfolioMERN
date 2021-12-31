@@ -1,17 +1,17 @@
 const router = require('express').Router();
-let Projects = require('../models/projects.model');
+let Coaching = require('../models/projects.model');
 
 
 
 router.route('/').get((req, res) => {
-    Projects.find({projectselect:'Shopify'})
-    .then(Shopifys => res.json(Shopifys))
+    Coaching.find({projectselect: 'Coaching Project'})
+    .then(coachings => res.json(coachings))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 
 router.route('/:id').delete((req, res) => {
-    Projects.findByIdAndDelete(req.params.id)
+    Coaching.findByIdAndDelete(req.params.id)
     .then(() => res.json('Exercise deleted.'))
     .catch(err => res.status(400).json('Hatali: ' + err));
 });
@@ -26,10 +26,10 @@ router.route('/add').post((req, res) => {
   const projectselect= req.body.projectselect;
   const projectimage=req.body.projectimage;
   
-  const newUser = new Projects({projectname,projectdesc,projectselect,projectimage});
+  const newUser = new Coaching({projectname,projectdesc,projectselect,projectimage});
 
   newUser.save()
-    .then(() => res.json('Shopify added!'))
+    .then(() => res.json('Coaching Project added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 

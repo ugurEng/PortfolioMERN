@@ -23,19 +23,19 @@ function Header(props) {
             </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Shop</a>
+            <Link to='/AboutMe.js'> 
+              <a class="nav-link" href="/">About Me</a>
+            </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">Referances</a>
-            </li>
-            <li class="nav-item">
+            <Link to='/ContactUs.js'> 
               <a class="nav-link" href="/">Contact</a>
+            </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Blog</a>
+            <Link to='/Services.js'>
+              <a class="nav-link" href="/">Services</a>
+            </Link>
             </li>
             <li class="nav-item">
 

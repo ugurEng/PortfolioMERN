@@ -8,7 +8,7 @@ function CommercialProjects() {
   const [posts, setPosts] = useState([])
 
   useEffect( ()=>{
-    axios.get("http://localhost:5002/mernstack")
+    axios.get("http://localhost:5002/commercial")
     .then(res=> {
       setPosts(res.data)
     })

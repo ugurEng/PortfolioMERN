@@ -87,7 +87,7 @@ function Admin() {
           <div class="card text-white bg-primary mb-3 cardd"
             style={{ width: "14rem" }}>
             <div class="card-body d-flex">
-              <div> <img src="https://img.icons8.com/ios/50/000000/shopify.png" />
+              <div> <img src="https://img.icons8.com/ios/50/000000/shopify.png" alt="imga" />
               </div>
               <div>
                 <h5 class="card-title">Students</h5>
@@ -98,7 +98,7 @@ function Admin() {
           <div class="card text-white bg-primary mb-3"
             style={{ width: "14rem" }}>
             <div class="card-body d-flex">
-              <div> <img src="https://img.icons8.com/ios/50/000000/react-native--v2.png" />
+              <div> <img src="https://img.icons8.com/ios/50/000000/react-native--v2.png" alt="imga" />
               </div>
               <div>
                 <h5 class="card-title">Students</h5>
@@ -107,6 +107,8 @@ function Admin() {
             </div>
           </div>
         </div>
+
+        
          <div id="adsa" class="alert alert-primary" role="alert">
           A simple primary alert—check it out!
         </div>
@@ -123,9 +125,8 @@ function Admin() {
                   <select class="form-control labell"
                     id="projectselect"
                     value={data.projectselect} onChange={(e) => handleselect(e)}>
-                    <option>MERN Stack</option>
-                    <option>Shopify</option>
-                    <option>Mentoring Project</option>
+                    <option>Commercial Projects</option>
+                    <option>Coaching Project</option>
                   </select>
                 </div>
                 <div class="form-group-sm ada">

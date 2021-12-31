@@ -25,19 +25,15 @@ connection.once('open', () => {
 })
 
 
-const mentoringRouter = require('./routes/mentoring');
-const mernstackRouter = require('./routes/mernstack');
-const shopifyRouter = require('./routes/shopify');
-const projectsRouter = require('./routes/projects');
+const coachingsRouter = require('./routes/Coachings');
+const commercialRouter = require('./routes/Commercial');
 
 
 //route dosyasindan import edilen users dosyasi burada islenerek DB ye gonderiliyor
 
 
-app.use('/mentoring', mentoringRouter);
-app.use('/mernstack', mernstackRouter);
-app.use('/shopify', shopifyRouter);
-app.use('/projects', projectsRouter);
+app.use('/coaching', coachingsRouter);
+app.use('/commercial', commercialRouter);
 
 
 app.listen(port, () => {

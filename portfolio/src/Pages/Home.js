@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="overflow-hidden">
         <section class="bg-primary homepage-firstsection">
           <div class="container">
             <div class="row featurette home-content">

@@ -1,0 +1,24 @@
+.section-padding {
+    padding: 90px 0px;
+}
+
+p {
+    line-height: 28px;
+    font-size: 15px;
+}
+.about-list {
+    margin-top: 30px;
+}
+
+.about-list li {
+    width: 45%;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: #888;
+}
+
+.about-list li i {
+    color: #000;
+    margin-right: 10px;
+}
